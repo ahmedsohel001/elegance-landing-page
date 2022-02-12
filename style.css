@@ -1,0 +1,262 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
+/* Default Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Hero Style */
+.hero-area {
+  background: url("./img/elegant-woman.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  height: 650px;
+}
+.hero-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 130px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+/* Clients Style */
+.clients-area {
+  background-color: #e7e2de;
+  padding: 45px 0;
+}
+.clients-logo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn-fill {
+  background-color: #000000;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+}
+/* Text Content Style */
+.text-content-area {
+  padding: 60px 0;
+}
+.text-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 25px;
+}
+.single-content {
+  display: flex;
+  padding: 5px;
+}
+.single-content:first-child {
+  background-color: #e7e2de;
+}
+.single-content:last-child {
+  background-color: #e7e2de;
+}
+.single-content-counter {
+  margin-right: 10px;
+}
+/* About Style */
+.about-area {
+  padding: 60px 0;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 35px;
+}
+.social-info {
+  margin-bottom: 80px;
+}
+.social-info a,
+.footer-social a {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  margin-right: 5px;
+}
+.social-info p {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.designation p {
+  margin-bottom: 15px;
+}
+.btn-underline {
+  display: inline-block;
+  color: #000000;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+/* Store Style */
+.store-area {
+  padding-bottom: 60px;
+}
+.store-title-area {
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 100;
+}
+.sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -15px;
+}
+.store-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+.store-info {
+  width: 90%;
+  margin: 0 auto;
+}
+.store-info p {
+  font-weight: 300;
+}
+/* Footer Style */
+.footer-area {
+  background-color: #e7e2de;
+  padding: 60px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-widget {
+  width: 40%;
+  margin-right: 50px;
+}
+.footer-widget:last-child {
+  margin-right: 0;
+}
+.footer-widget:nth-child(2) {
+  width: 20%;
+}
+.footer-title {
+  font-size: 35px;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.footer-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.footer-social {
+  margin-top: 10px;
+}
+.footer-contact {
+  margin-bottom: 10px;
+}
+.footer-contact:last-child {
+  margin-bottom: 0;
+}
+.contact-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.footer-contact p {
+  font-weight: 300;
+}
+.footer-contact p i {
+  margin-right: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+.contact-form input::placeholder {
+  color: gray;
+}
+
+/* Responsive Style */
+
+@media (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+  .hero-area {
+    height: 400px;
+  }
+  .hero-title h1 {
+    font-size: 55px;
+  }
+  .clients-logo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .text-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .social-info {
+    margin-bottom: 40px;
+  }
+  .store-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-content {
+    display: block;
+  }
+  .footer-widget {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
